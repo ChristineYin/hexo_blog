@@ -1,7 +1,7 @@
 ---
 title: JS 之 call、apply、bind
 tags: [JS, call, apply, bind]
-index_img: https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2050318681,1081448419&fm=26&gp=0.jpg
+# index_img: https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2050318681,1081448419&fm=26&gp=0.jpg
 date: 2020-05-28 21:46:16
 ---
 

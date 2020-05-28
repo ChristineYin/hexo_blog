@@ -1,11 +1,11 @@
 ---
 title: ES6 之 Promise常见面试题
 tags: [ES6, Promise]
-index_img: https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2050318681,1081448419&fm=26&gp=0.jpg
+# index_img: https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2050318681,1081448419&fm=26&gp=0.jpg
 date: 2020-05-28 21:48:16
 ---
 
-## 问题1：限制 Promise 并发数量
+## 问题 1：限制 Promise 并发数量
 
 ```bash
 // 使用方式
@@ -23,10 +23,10 @@ const LimitPromise = require('./limit-promise')
 const MAX = 10;
 cosnt limitP = new LimitPromise(MAX);
 function get (url, params) {
-  return limitP.call(request.get, url, params)  
+  return limitP.call(request.get, url, params)
 }
 function post (url, params) {
-  return limitP.call(request.post, url, params)  
+  return limitP.call(request.post, url, params)
 }
 module.exports = {get, post}
 ```
@@ -36,14 +36,14 @@ module.exports = {get, post}
 function LimitPromise (max) {
   this._max = max;
   this._count = 0;
-  this._taskQueue = [];      
+  this._taskQueue = [];
 }
 
 LimitPromise.prototype.call = function (caller, ...args) {
   return new Promise((resolve, reject) => {
-    var task = this._createTask(caller, args, resolve, reject)  
-    this._count > this.max ? this._taskQueue.push(task) : task() 
-  })   
+    var task = this._createTask(caller, args, resolve, reject)
+    this._count > this.max ? this._taskQueue.push(task) : task()
+  })
 }
 
 LimitPromise.prototype._createTask = function (caller, args, resolve, reject) {
@@ -56,9 +56,9 @@ LimitPromise.prototype._createTask = function (caller, args, resolve, reject) {
       if (this._taskQueue.length > 0) {
         var task = this._taskQueue.shift()
         task()
-        this._count++;  
+        this._count++;
       }
-    })  
+    })
   })
 }
 
@@ -67,8 +67,7 @@ module.exports = LimitPromise;
 https://www.jianshu.com/p/cc706239c7ef
 ```
 
-
-## 问题2：async/await 代替 promise.all
+## 问题 2：async/await 代替 promise.all
 
 ```bash
 // 使用方式
@@ -78,7 +77,7 @@ function doJob (x, sec) {
     setTimeout(() => {
       resolve(x)
     }, sec * 100)
-  })  
+  })
 }
 ```
 
@@ -86,15 +85,15 @@ function doJob (x, sec) {
 (async function (){
   try{
     const all1 = await asyncAlls([doJob(1,1), doJob(2,1), doJob(0,1), doJob(4,1)])
-    console.log('all1:', all1)    
+    console.log('all1:', all1)
   }catch(error){
-    console.log('1:', error)  
+    console.log('1:', error)
   }
   try{
     const all2 = await asyncAlls([doJob(5,1), doJob(6,1), doJob(7,1), doJob(8,1)])
-    console.log('all2:', all2)      
+    console.log('all2:', all2)
   }catch(error){
-    console.log('1:', error)  
+    console.log('1:', error)
   }
 })()
 
@@ -104,20 +103,20 @@ async function asyncAlls (jobs) {
     let result = job.map(job => job);
     let res = []
     for(const result of results) {
-      res.push(await result)  
+      res.push(await result)
     }
     return res
   }catch(error){
     throw new Error(error)
-  }  
+  }
 }
 
 https://z-index.me/2019/08/17/Async-Await
 ```
 
-## 问题3：如何取消 Promise
+## 问题 3：如何取消 Promise
 
-**方法一：promise.race方法**
+**方法一：promise.race 方法**
 
 ```bash
 function wrap (p) {
@@ -147,7 +146,7 @@ obj.resolve("请求被拦截了");
 obj.reject("请求被拒绝了");
 ```
 
-**方法二： 新包装一个可操控的promise**
+**方法二： 新包装一个可操控的 promise**
 
 ```bash
 function wrap (p) {
@@ -180,7 +179,7 @@ obj.then(res => {
 obj.abort("请求被拦截");
 ```
 
-## 问题4：Promise 输出题 1
+## 问题 4：Promise 输出题 1
 
 ```bash
 console.log(1)
@@ -215,7 +214,7 @@ setTimeout(()=>{
 console.log(10)
 ```
 
-## 问题4：Promise 输出题 2
+## 问题 4：Promise 输出题 2
 
 ```bash
 console.log(1);
