@@ -1,5 +1,9 @@
 .index-card
   margin-bottom 2.5rem
+  padding 3rem
+  border-radius 5px
+  border-bottom 1px solid #eee
+  // box-shadow 1px 1px 5px 0 rgba(0,0,0,.02), 1px 1px 15px 0 rgba(0,0,0,.03)
 
 .index-img
   img
@@ -18,26 +22,31 @@
   padding-bottom .5rem
 
 .index-header
-  font-size 1.2rem
-  font-weight bold
+  font-size 1.4rem
+  font-weight 430
   line-height 1
   white-space nowrap
   overflow hidden
   text-overflow ellipsis
+  margin-bottom 1rem
 
 .index-btm
   color $sec-text-color
 
   a
-    color $sec-text-color
+    color #808080
 
 .index-excerpt
   color $sec-text-color
 
   margin 0.5rem 0 0.5rem 0
   max-height calc(2rem * 3)
-  line-height 2rem
+  line-height 1.5rem
   overflow hidden
+  margin-bottom 2rem
+
+  &:hover
+    color $sec-text-color
 
   & > div
     float right
