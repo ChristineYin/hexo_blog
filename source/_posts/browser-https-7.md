@@ -1,8 +1,12 @@
 ---
 title: 浏览器 之 HTTPS
 date: 2020-05-28 22:17:35
-tags: [浏览器, HTTPS]
-# index_img: /img/browser-https-7.jpeg
+tags:
+  - 浏览器
+  - HTTPS
+categories:
+  - [HTTPS]
+excerpt: HTTPS 并不是一个新的协议，而是一个加强版的 HTTP。其原理是在 HTTP 和 TCP 之间建立一个中间层，当 HTTP 和 TCP 通信时并不是像之间那样直接通信，而是经过了一个中间层加密，将加密后的数据包传给 TCP，相应的，TCP 必须将数据包解密，才能传给上面的 HTTP。这个中间层也叫安全层。安全层的核心对应的就是数据的加解密。
 ---
 
 ## HTTPS 协议

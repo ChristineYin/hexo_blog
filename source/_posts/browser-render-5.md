@@ -1,8 +1,14 @@
 ---
 title: 浏览器 之 从输入 url 到页面展示
-tags: [浏览器, 渲染, 进程, 线程]
-# index_img: /img/browser-render-5.jpeg
 date: 2020-05-28 21:49:16
+tags:
+  - 浏览器
+  - 渲染
+  - 进程
+  - 线程
+categories:
+  - [渲染]
+excerpt: 浏览器多进程架构，最新的 Chrome 浏览器包括：1 个浏览器主进程、1 个 GPU 进程、1 个网络进程、多个渲染进程、多个插件进程。
 ---
 
 ## 浏览器架构

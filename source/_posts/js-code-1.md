@@ -1,8 +1,12 @@
 ---
 title: JS 之 函数柯里化
-tags: [JS, 函数柯里化]
-# index_img: https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2050318681,1081448419&fm=26&gp=0.jpg
 date: 2020-05-28 21:46:16
+tags:
+  - JS
+  - 函数柯里化
+categories:
+  - [JS]
+excerpt: 函数柯里化是把接受多个参数的函数变换成接受一个单一参数（最初函数的第一个参数）的函数，并且返回接受余下的参数而且返回结果的新函数技术。
 ---
 
 ## 函数柯里化

@@ -1,8 +1,12 @@
 ---
 title: 浏览器 之 本地存储
-tags: [浏览器, 存储]
-# index_img: /img/browser-storage-2.jpeg
 date: 2020-05-28 21:49:16
+tags:
+  - 本地存储
+  - 浏览器
+categories:
+  - [安全]
+excerpt: 浏览器的本地存储主要分为 Cookie、WebStorage 和 IndexedDB, 其中 WebStorage 又可以分为 localStorage 和 sessionStorage。
 ---
 
 浏览器的本地存储主要分为 Cookie、WebStorage 和 IndexedDB, 其中 WebStorage 又可以分为 localStorage 和 sessionStorage。

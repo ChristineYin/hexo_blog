@@ -1,8 +1,12 @@
 ---
 title: 浏览器 之 TCP
 date: 2020-05-28 22:07:30
-tags: [浏览器, TCP]
-# index_img: /img/browser-tcp-6.jpeg
+tags:
+  - 本地存储
+  - TCP
+categories:
+  - [TCP]
+excerpt: TCP，Transmission Control Protocal，传输控制协议，是一种面向连接的、可靠的、基于字节流的传输层通信协议。
 ---
 
 ## TCP

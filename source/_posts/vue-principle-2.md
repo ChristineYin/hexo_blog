@@ -1,8 +1,14 @@
 ---
 title: Vue 之 基本原理
 date: 2020-05-28 23:16:52
-tags: [Vue, 响应式原理, Computed原理, Watch原理]
-# index_img: /img/vue-principle-2.jpg
+tags:
+  - Vue
+  - 响应式原理
+  - Computed原理
+  - Watch原理
+categories:
+  - [Vue]
+excerpt: Vue 响应式原理的核心的采用数据劫持与发布订阅模式相结合的方式。在 Vue 响应式的实现机制中与三个类有关：Observer，Dep，Watcher。
 ---
 
 ## 响应式原理

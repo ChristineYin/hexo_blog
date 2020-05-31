@@ -1,8 +1,12 @@
 ---
 title: 浏览器 之 DNS
 date: 2020-05-28 22:49:09
-tags: [浏览器, DNS]
-# index_img: /img/browser-DNS-10.jpg
+tags:
+  - 浏览器
+  - DNS
+categories:
+  - [DNS]
+excerpt: 1. 浏览器缓存：当用户通过浏览器访问某域名时，浏览器首先会在自己的缓存中查找是否有该域名对应的 IP 地址（若曾经访问过该域名且没有清空缓存便存在)；
 ---
 
 ## DNS 解析过程

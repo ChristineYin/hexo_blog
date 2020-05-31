@@ -1,8 +1,13 @@
 ---
 title: 浏览器 之 WebSocket
 date: 2020-05-28 22:36:42
-tags: [WebSocket、Web Worker、Servise Worker]
-# index_img: /img/browser-websocket-8.jpeg
+tags:
+  - WebSocket
+  - Web Worker
+  - Servise Worker
+categories:
+  - [WebSocket]
+excerpt: 由于 Http 存在一个明显的缺点(半双工通信)，消息只能由客户端推送到服务端，而不能服务端主打推送到客户端。如果服务器有连续的变化，为了实现这种推送技术只能使用轮询，而轮询效率过低，并不适合。于是 WebSocket 被发明出来，来完善双工通信的更好实现方式。它是属于应用层的协议、基于 TCP 传输、并复用 HTTP 的握手通道。
 ---
 
 ## WebSocket

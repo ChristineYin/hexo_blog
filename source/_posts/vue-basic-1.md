@@ -1,8 +1,12 @@
 ---
 title: [Vue 之 生命周期]
 date: 2020-05-28 23:03:22
-tags: [Vue, 生命周期]
-# index_img: /img/vue-basic-1.jpg
+tags:
+  - Vue
+  - 生命周期
+categories:
+  - [Vue]
+excerpt: Vue 是一门渐进式的 javascript 框架。所谓的渐进式就是：从中心的视图层渲染开始向外扩散的构建工具层。这个过程会经历：视图层渲染-->组件机制-->路由状态-->状态管理-->构建工具，五个层级。
 ---
 
 ## Vue 是什么

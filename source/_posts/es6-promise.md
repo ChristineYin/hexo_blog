@@ -1,8 +1,12 @@
 ---
 title: ES6 之 Promise常见面试题
-tags: [ES6, Promise]
-# index_img: https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2050318681,1081448419&fm=26&gp=0.jpg
 date: 2020-05-28 21:48:16
+tags:
+  - ES6
+  - Promise
+categories:
+  - [WebSocket]
+excerpt: 本篇主要记录一些常见的 Promise 面试题
 ---
 
 ## 问题 1：限制 Promise 并发数量

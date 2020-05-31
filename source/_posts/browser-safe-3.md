@@ -1,8 +1,14 @@
 ---
 title: 浏览器 之 安全
-tags: [浏览器, 安全, XSS, CSRF]
-# index_img: /img/browser-safe-3.jpeg
 date: 2020-05-28 21:49:16
+tags:
+  - 浏览器
+  - 安全
+  - XSS
+  - CSRF
+categories:
+  - [安全]
+excerpt: 常见的浏览器攻击可以分为 XSS 和 CSRF 攻击。
 ---
 
 常见的浏览器攻击可以分为 XSS 和 CSRF 攻击。

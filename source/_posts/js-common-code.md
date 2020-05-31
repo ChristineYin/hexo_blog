@@ -1,8 +1,11 @@
 ---
 title: 常见手写原生代码
 date: 2020-05-27 22:15:17
-tags: [JS]
-# index_img: https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2050318681,1081448419&fm=26&gp=0.jpg
+tags:
+  - JS
+categories:
+  - [JS]
+excerpt: 常见手写原生代码
 ---
 
 ## 函数柯里化
