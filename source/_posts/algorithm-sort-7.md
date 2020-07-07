@@ -99,5 +99,31 @@ https://mp.weixin.qq.com/s/885uGVhlffWAxjgIEW-TiA
 
 ## 快速排序
 ```bash
+function sort (arr, startIndex, endIndex) {
+    if (endIndex <= startIndex>) {
+        return;
+    }
+    const pivotIndex = partition(arr, startIndex, endIndex);
+    sort(arr, startIndex, pivotIndex - 1);
+    sort(arr, pivotIndex + 1, endIndex);
+}
 
+function partition (arr, startIndex, endIndex) {
+    let pivot = arr[startIndex];
+    let mark = startIndex;
+
+    for (const i=startIndex+1; i<=endIndex; i++) {
+        if (arr[i] < pivot>) {
+            mark++;
+            const p = arr[mark];
+            arr[mark] = arr[i];
+            arr[i] = p;
+        }
+    }
+
+    # 基准值与 mark 对应元素调换位置
+    arr[startIndex] = arr[mark];
+    arr[mark] = pivot;
+    return mark;
+}
 ```

@@ -8,6 +8,27 @@ categories:
 excerpt: 常见手写原生代码
 ---
 
+## 实现一个无限极累加的函数
+
+形如 add(1) //=> 1; add(1)(2) //=> 2; add(1)(2)(3) //=> 6; add(1)(2)(3)(4) //=> 10; 以此类推。。。。。
+
+```bash
+function add(a) {
+    function sums(b) {
+        a = a + b;
+        return sums;
+    }
+
+    sums.toString = function () {
+        return a;
+    }
+
+    return sums;
+}
+```
+
+https://www.cnblogs.com/oxspirt/p/5436629.html
+
 ## 函数柯里化
 
 函数柯里化是把接受多个参数的函数变换成接受一个单一参数（最初函数的第一个参数）的函数，并且返回接受余下的参数而且返回结果的新函数技术。
@@ -209,7 +230,7 @@ Function.prototype.bind = function (context) {
 
   var fBound = function () {
     var bindArgs = Array.prototype.slice.call(arguments);
-    return self.apply(this instanceof fNOP ? this : context, args.concat(bindArgs))
+    return self.apply(this instanceof self ? this : context, args.concat(bindArgs))
   }
 
   fNOP.prototype = this.prototype;
