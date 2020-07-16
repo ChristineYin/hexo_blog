@@ -127,3 +127,5 @@ function partition (arr, startIndex, endIndex) {
     return mark;
 }
 ```
+
+// https://mp.weixin.qq.com/s/-kzyLnHfIBpuJWtAao5tdQ
